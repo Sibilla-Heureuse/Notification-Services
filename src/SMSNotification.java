@@ -1,3 +1,10 @@
-public class SMSNotification {
+public class SMSNotification implements NotificationService {
+
+    @Override
+    public void sendNotification(String message) {
+        System.out.println("= SMS NOTIFICATION =");
+        System.out.println("Sending SMS Notification: " + message);
+        System.out.println();
+    }
 
 }
